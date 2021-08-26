@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  padding:0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fefefe;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin:.5rem;
+}
+
+.navbar-links ul{
+  margin:0;
+  padding:0;
+  display: flex;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #fefefe;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover {
+  background: #555;
+}
+
+/* Humberger menu */
+.navbar-tab {
+  position: absolute;
+  top: .75rem;
+  right: 5.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+/* Three line in hunberger menu */
+.navbar-tab .bar {
+  height: 3px;
+  width: 100%;
+  background: #fefefe;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .navbar-tab {
+    display: flex;
+  }
+
+  
+  /* Reposition .navbar ul for menu tab */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul{
+    position: absolute;
+    right: 1.5rem;
+    background: #333;
+    width: 10rem;
+    flex-direction: column;
+    border-radius: 3px;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a{
+    padding: .5rem 1rem;
+  }
+
+  
+
+  .navbar-links.display-none  ul{
+    display: none;
+  }
+  .navbar-links.active  ul{
+    display: flex;
+    animation: roll-out 500ms ease-in-out both
+  }
+  .navbar-links.roll-in  ul{
+    animation: roll-in 500ms ease-in-out both;    
+  }
+  
+
+
+  
+  @keyframes roll-out {
+    0% {
+      opacity: 0;
+      height: 0;
+    }
+    100% {
+      opacity: 1;
+      height:100px;
+    }
+  }
+
+  @keyframes roll-in {
+    0% {
+      opacity: 1;
+      height: 100px;
+    }
+    100% {
+      opacity: 0;
+      height:0;
+    }
+  }
+  
+}
+
+/* Copied content */
+
+.section-content-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  margin-top: -10px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.section-content-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  margin-top: -10px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form-input.textarea {
+  height: 168px;
+  min-width: 600px;
+  border: 2px solid #000;
+}
