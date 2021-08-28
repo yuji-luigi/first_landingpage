@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.13.0/devicon.min.css">
 
   <!-- add description -->
   <link rel="stylesheet" href="landing.css">
   <title>Yuji Sato</title>
 </head>
 <body>
-  <header class="main-header">
+  <video autoplay muted loop src="image/water_reflection-2.mp4" id="myVideo" ></video>
+    <header id="frame" class="main-header">
     <nav class="navbar">
       <div class="brand-title">Yuji Sato</div>
-
+  
       <a href="#" class="navbar-tab">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -29,112 +30,160 @@
         </ul>
       </div>
     </nav>
+    <div id="inner-frame">
+      <div id="lines">
+        <span id="line--right"></span>
+        <span id="line--bottom"></span>
+        <span id="line--left"></span>
+      </div>
+    </div>
+  </header>
     <section id="sectionh">
-      <div class="header-bg"></div>
+      <!-- <div class="header-bg"></div> -->
           <div class="content-wrap grid">
             <div class="content-title">
               <h1>Welcome to my page</h1>
             </div>
             <div class="content-text">
-              <p>This Is My MindSet And What I Can Do ... (For Now)</p>
+              <p>This Is My MindSet And What I am capable of</p>
             </div>
       </div>
     </section>
-  </header>
   <main id="main">
-
     <section id="section1">
-      <div class="js-slide">
-      <img src="image/codes.jpg" class="img-big" alt="">
-      <img src="image/anger.jpg" class="img-midium" alt="">
-      <div class="content-text">
-        <h3>Yuji</h3>
-        <h3>Sato</h3>
-        <p>Everyday, Googling, To find solution, because of errors.</p>
-      </div>
-        <span></span>
-      </div>
-      <article id="article1">
-        <div class="content-wrap">
-           <h4 class="content-title"> Technologies I have used </h4>
-           <div class="grid-gallery">
-           <img src="" alt="">
+      <article>
+        <h1 class="section-title"> presentation </h1>
+        <img src="image/foto0.jpg" alt="">
+        <p>
+          My name is Yuji Sato. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam illo sapiente laboriosam nisi exercitationem quae officiis culpa unde dolorum quidem? Possimus repudiandae animi quibusdam totam illo facilis aut, cumque voluptatem!
+        </p>
+      </article>
+      <article class="gallery">
+        <h2>Technologies I have used</h2>
+        <div class="flex">
+          <div> 
+            <img src="image/mongodb.svg" alt="">
           </div>
+          <div>
+            <img src="image/javascript.svg" alt="">
+          </div>
+          <div>
+            <img src="image/nodejs.svg" alt="">
+          </div>
+          
+        </div>
+      </article>
+      <article class="gallery">
+        <h2>I am going to learn</h2>
+        <div class="flex">
+          <div>
+            <img src="image/typescript.svg" alt="">
+            <p></p>
+          </div>
+          <div>
+            <img src="image/react.svg" alt="">
+            <p></p>
+          </div>
+          <div>
+            <img src="image/bootstrap-plain-wordmark.svg" alt="">
+            <p></p>
+          </div>
+          
+          
+          
         </div>
       </article>
     </section>
     <section id="section2">
-      <div class="js-slide">
-        <img src="image/pullup.jpg" alt="">      
-        <h3>Trainig</h3>
-        <h4>&</h4>
-        <h1>Mindset</h1>
-        <span></span>
-      </div>
-      <article class="grid">
-        <div class="content-wrap">
-         <h2 class="content-title"> Training is Good in Many Ways </h2>
-         <div class="content-text">
-           <p>
-             Ofcourse,It can help your Health. But I want to emphasis on the mindset it can offer you.
-             without traing, I couldn't getsuch a mindset that I have today. It helped me to follow my other passion... 
-             such as CODING!!!!!
-            </p>
-          </div>
+      <article class="content-wrap">
+        <h1 class="secion-title">Portafoglio</h1>
+        <div class="grid">
+          <a href="#">
+          <div class="card">
+              <img src="image/fantasy.jpg" alt="">
+              <div class="card-content">
+                <h4>Backend app</h4>
+                <p>My first challenge to make shopping cart along with auth system.
+                  Node.js MongoDB 
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+          <div class="card">
+              <img src="image/windwheel.jpg" alt="">
+              <div class="card-content">
+                <h4>Backend app</h4>
+                <p>My first challenge to make shopping cart along with auth system.
+                  Node.js MongoDB 
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+          <div class="card">
+              <img src="image/fantasy.jpg" alt="">
+              <div class="card-content">
+                <h4>Backend app</h4>
+                <p>My first challenge to make shopping cart along with auth system.
+                  Node.js MongoDB 
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
       </article>
     </section>
-    <section class="section3">
-      <div class="content-wrap">
-        <h1 class="content-title">Portafoglio</h1>
+    <section class="grid" id="section3">
+      <div class="slide-container">
+        <div class="content-title">
+          <h3>Trainig</h3>
+          <h4>&</h4>
+          <h1>Mindset</h1>
+        </div>
+        <img class="section-main-image" src="image/pullup5.jpg" alt="">      
+        <span></span>
+      </div>
+      <div class="slide-container gallery">
+        <h1>Gallery</h1>
         <div class="grid">
-          <div class="card">
-            <a href="#">
-              <img src="image/fantasy.jpg" alt="">
-            </a>
-            <div class="card-content">
-              <h4>Backend app</h4>
-              <p>My first challenge to make shopping cart along with auth system.
-                Node.js MongoDB 
-              </p>
-              <a href="#" class="btn btn-readmore">Read More</a>
-            </div>
-          </div>
-          <div class="card">
-            <a href="#">
-              <img src="image/windwheel.jpg" alt="">
-            </a>
-            <div class="card-content">
-              <h4>Backend app</h4>
-              <p>My first challenge to make shopping cart along with auth system.
-                Node.js MongoDB 
-              </p>
-              <a href="#" class="btn btn-readmore">Read More</a>
-            </div>
-          </div>
-          <div class="card">
-            <a href="#">
-              <img src="image/fantasy.jpg" alt="">
-            </a>
-            <div class="card-content">
-              <h4>Backend app</h4>
-              <p>My first challenge to make shopping cart along with auth system.
-                Node.js MongoDB 
-              </p>
-              <a href="#" class="btn btn-readmore">Read More</a>
-            </div>
-          </div>
+          <img src="https://source.unsplash.com/random/200x200" alt="">
+          <img src="https://source.unsplash.com/random/201x200" alt="">
+          <img src="https://source.unsplash.com/random/202x200" alt="">
+          <img src="https://source.unsplash.com/random/203x200" alt="">
+          <img src="https://source.unsplash.com/random/204x200" alt="">
+          <img src="https://source.unsplash.com/random/205x200" alt="">
+          <img src="https://source.unsplash.com/random/206x200" alt="">
+          <img src="https://source.unsplash.com/random/207x200" alt="">
+          <img src="https://source.unsplash.com/random/208x200" alt="">
         </div>
       </div>
+  </section>
+    <section id="section4">
+      
+        <img class="section-bg1" src="image/codes.jpg"> 
+        <img class="section-bg2" src="image/anger.jpg">
+        <div class="content-text">
+          <h3>Everyday,</h3>
+          <h3>Fight Against Errors!</h3>
+          <h3>and</h3>
+          <h3>Training!</h3>
+        </div>
     </section>
+      
   </main>
   <footer class="main-footer">
-    <h1>Send me Message</h1>
+    <h1>Contact Me</h1>
     <p>I'm available for you!</p>
-    <div class="contact-form-wrap">
-      <form action="">
-
-      </form>
+    <div class="">
+      <p>yujisato.usk.jpn@gmail.com</p>
+    </div>
+    <div class="flex">
+      <ul>
+        <li><a href="">instagram</a></li>
+        <li><a href="">facebook</a></li>
+        <li><a href="">linkedin</a></li>
+      </ul>
     </div>
 
 
