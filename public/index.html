@@ -30,14 +30,12 @@
         </ul>
       </div>
     </nav>
-    <div id="inner-frame">
-      <div id="lines">
-        <span id="line--right"></span>
-        <span id="line--bottom"></span>
-        <span id="line--left"></span>
-      </div>
-    </div>
   </header>
+  <div id="inner-frame">
+      <span id="line--right"></span>
+      <span id="line--bottom"></span>
+      <span id="line--left"></span>
+  </div>
     <section id="sectionh">
       <!-- <div class="header-bg"></div> -->
           <div class="content-wrap grid">
@@ -51,116 +49,156 @@
     </section>
   <main id="main">
     <section id="section1">
-      <article>
-        <h1 class="section-title"> presentation </h1>
-        <img src="image/foto0.jpg" alt="">
-        <p>
-          My name is Yuji Sato. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam illo sapiente laboriosam nisi exercitationem quae officiis culpa unde dolorum quidem? Possimus repudiandae animi quibusdam totam illo facilis aut, cumque voluptatem!
-        </p>
-      </article>
-      <article class="gallery">
-        <h2>Technologies I have used</h2>
-        <div class="flex">
-          <div> 
-            <img src="image/mongodb.svg" alt="">
-          </div>
-          <div>
-            <img src="image/javascript.svg" alt="">
-          </div>
-          <div>
-            <img src="image/nodejs.svg" alt="">
-          </div>
-          
+      <h1 class="section-title"> Presentation </h1>
+      <article class="grid">
+        <div class="content-wrap title-wrap">
         </div>
-      </article>
-      <article class="gallery">
-        <h2>I am going to learn</h2>
-        <div class="flex">
-          <div>
-            <img src="image/typescript.svg" alt="">
-            <p></p>
+        <div class="main-myimage content-wrap">
+          <img  src="image/foto0.jpg" alt="">
+        </div>
+        <div class="content-wrap profile-text">
+          <p>
+            Nice to meet you!! 
+            My name is Yuji Sato. 
+            When I met the world of programming for the first time,
+            I immediately bacame so passionate to learn and found it so fun and interesting!! (It was in January 2021, this year!)
+            So now, I am learning to code everymorning!(My morning routine!) 
+            I am from Japan. And I live in Lissone, Monza e Brianza. 
+            I also like to Training which is also my morning routine.
+            I would like to have connection with programming society. 
+            And I eager to step up my coding knowledes
+            (Not only coding but also management skills and of course pernonality!!)
+            Thank you for visiting my page and I hope see you soon!!
+          </p>
+        </div>
+        <div class="content-wrap tech tech-used">
+          <h2>Technologies I have used</h2>
+          <div class="gallery">
+            <div class="tech-icons flex">
+              <div> 
+                <img src="image/mongodb.svg" alt="">
+              </div>
+              <div>
+                <img src="image/javascript.svg" alt="">
+              </div>
+              <div>
+                <img src="image/nodejs.svg" alt="">
+              </div>
+            </div>
           </div>
-          <div>
-            <img src="image/react.svg" alt="">
-            <p></p>
           </div>
-          <div>
-            <img src="image/bootstrap-plain-wordmark.svg" alt="">
-            <p></p>
-          </div>
-          
-          
-          
+          <div class="content-wrap tech tech-to-learn">
+            <h2>I am going to learn</h2>
+            <div class="gallery">
+              <div class="tech-icons flex">
+                <div>
+                  <img src="image/typescript.svg" alt="">
+                </div>
+                <div>
+                  <img src="image/react.svg" alt="">
+                </div>
+                <div>
+                  <img src="image/bootstrap-plain-wordmark.svg" alt="">
+                </div>
+              </div>   
+            </div>
         </div>
       </article>
     </section>
     <section id="section2">
       <article class="content-wrap">
-        <h1 class="secion-title">Portafoglio</h1>
+        <h1 class="section-title">Portafoglio</h1>
         <div class="grid">
-          <a href="#">
-          <div class="card">
-              <img src="image/fantasy.jpg" alt="">
+          <a class="a-card-wrap" href="https://bonbonmilano.herokuapp.com">
+            <div class="card">
+              <img src="image/bombom_img.jpg" alt="">
               <div class="card-content">
-                <h4>Backend app</h4>
-                <p>My first challenge to make shopping cart along with auth system.
-                  Node.js MongoDB 
-                </p>
+                <h4>E-commerce store</h4>
+                <p>My first Node.js challenge. I created a shopping cart and auth system with email confirmation.
+                   </p>
+                   <ul>
+                     <li>MongoDB</li>
+                     <li>Node.js</li>
+                     <li>Stripe</li>
+                   </ul>
               </div>
             </div>
           </a>
-          <a href="#">
-          <div class="card">
-              <img src="image/windwheel.jpg" alt="">
+
+          <a class="a-card-wrap" href="#">
+            <div class="card">
+              <img src="image/workout_yuji1.png" alt="">
               <div class="card-content">
-                <h4>Backend app</h4>
-                <p>My first challenge to make shopping cart along with auth system.
-                  Node.js MongoDB 
+                <h4>Workout web app</h4>
+                <p>My first project! I wanted to make a workout app that we see around. And this is
+                  what I could have made.
                 </p>
+                <ul> 
+                  <li>Plain Javascript</li>
+                </ul>
               </div>
             </div>
           </a>
-          <a href="#">
-          <div class="card">
-              <img src="image/fantasy.jpg" alt="">
+          <a class="a-card-wrap" href="#">
+            <div class="card">
+              <img src="image/marubatsu.png" alt="">
               <div class="card-content">
-                <h4>Backend app</h4>
-                <p>My first challenge to make shopping cart along with auth system.
-                  Node.js MongoDB 
+                <h4>X O Game</h4>
+                <p>
+                  I always wanted to make a Game like this. The one mini game in Mario RPG.
+                  I made this after I saw tutorial of minesweeper. 
                 </p>
+                <ul>
+                  <li>Plain Javascript</li>
+                </ul>
               </div>
             </div>
           </a>
         </div>
+
       </article>
     </section>
     <section class="grid" id="section3">
-      <div class="slide-container">
-        <div class="content-title">
-          <h3>Trainig</h3>
-          <h4>&</h4>
-          <h1>Mindset</h1>
+      <div class="slide-container flex">
+          <div class="content-title">
+            <h3>Training!</h3>
+            <h4>&</h4>
+            <h1>Mindset!!!</h1>
+          </div>
+        
+        <div class="image-wrap">
+          <img class="section-main-image" src="image/pullup5.jpg" alt="">      
         </div>
-        <img class="section-main-image" src="image/pullup5.jpg" alt="">      
         <span></span>
       </div>
-      <div class="slide-container gallery">
-        <h1>Gallery</h1>
-        <div class="grid">
-          <img src="https://source.unsplash.com/random/200x200" alt="">
-          <img src="https://source.unsplash.com/random/201x200" alt="">
-          <img src="https://source.unsplash.com/random/202x200" alt="">
-          <img src="https://source.unsplash.com/random/203x200" alt="">
-          <img src="https://source.unsplash.com/random/204x200" alt="">
-          <img src="https://source.unsplash.com/random/205x200" alt="">
-          <img src="https://source.unsplash.com/random/206x200" alt="">
-          <img src="https://source.unsplash.com/random/207x200" alt="">
-          <img src="https://source.unsplash.com/random/208x200" alt="">
-        </div>
-      </div>
+      </section>
+      <section id="section4">
+       <div class="slide-container gallery">
+         <h1 class="section-title">Gallery</h1>
+         <div class="grid">
+           <img src="https://source.unsplash.com/random/200x200" alt="">
+           <img src="https://source.unsplash.com/random/201x200" alt="">
+           <img src="https://source.unsplash.com/random/202x200" alt="">
+           <img src="https://source.unsplash.com/random/203x200" alt="">
+           <img src="https://source.unsplash.com/random/204x200" alt="">
+           <img src="https://source.unsplash.com/random/205x200" alt="">
+           <img src="https://source.unsplash.com/random/206x200" alt="">
+           <img src="https://source.unsplash.com/random/207x200" alt="">
+           <img src="https://source.unsplash.com/random/208x200" alt="">
+           <img src="https://source.unsplash.com/random/200x200" alt="">
+           <img src="https://source.unsplash.com/random/201x200" alt="">
+           <img src="https://source.unsplash.com/random/202x200" alt="">
+           <img src="https://source.unsplash.com/random/203x200" alt="">
+           <img src="https://source.unsplash.com/random/204x200" alt="">
+           <img src="https://source.unsplash.com/random/205x200" alt="">
+           <img src="https://source.unsplash.com/random/206x200" alt="">
+           <img src="https://source.unsplash.com/random/207x200" alt="">
+           <img src="https://source.unsplash.com/random/208x200" alt="">
+         </div>
+       </div>
   </section>
-    <section id="section4">
-      
+    <section id="section5">
+      <!-- <div class="content-wrap"> -->
         <img class="section-bg1" src="image/codes.jpg"> 
         <img class="section-bg2" src="image/anger.jpg">
         <div class="content-text">
@@ -169,6 +207,7 @@
           <h3>and</h3>
           <h3>Training!</h3>
         </div>
+      <!-- </div> -->
     </section>
       
   </main>
