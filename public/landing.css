@@ -330,19 +330,19 @@ header {
 
 #section3 .slide-container {
   position: relative;
-  min-height: 500px;
+  min-height: 400px;
 }
 
 #section3 .section-main-image {
   position: absolute;
-  width: 350px;
+  width: 250px;
   right:0;
   animation: spin-in 1500ms ease-in-out both;
 }
 
 #section3 .content-title {
   position: absolute;
-  font-size: 3rem;
+  font-size: 2rem;
   top: 70px;
   left: 5%;
   z-index: 1;
