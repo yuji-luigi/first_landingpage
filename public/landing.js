@@ -1,6 +1,10 @@
 const navbarTab = document.getElementsByClassName('navbar-tab')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
+const scrollElements = document.querySelectorAll(".scroll-container");
+
+
+
 navbarTab.addEventListener('click', () => {
   toggleNavTab()
 })
@@ -24,3 +28,56 @@ const closeMenu = () => {
       },500 )
   }
 }
+
+
+// scroll slides
+
+
+const elementOutofView = (el) => {
+  const elementTop = el.getBoundingClientRect().top;
+  
+  return (
+    elementTop > (window.innerHeight || document.documentElement.clientHeight)
+    );
+  };
+  
+  
+  
+  
+  window.addEventListener("scroll", () => { 
+    handleScrollAnimation();
+  });
+  
+  const handleScrollAnimation = () => {
+    scrollElements.forEach((el) => {
+      if (elementInView(el, 1.25)) {
+        displayScrollElement(el);
+      } else if (elementOutofView(el)) {
+        hideScrollElement(el)
+      }
+    })
+  }
+  
+  const elementInView = (el, dividend = 1) => {
+    const elementTop = el.getBoundingClientRect().top;
+    
+    return (
+      elementTop <=
+      (window.innerHeight || document.documentElement.clientHeight) / dividend
+      );
+    };
+    
+const displayScrollElement = (element) => {  
+  const children = element.children
+  const jsScrolls = Array.prototype.slice.call(children)
+  console.log(`element: ${element}, children:${children}, jsscroll: ${jsScrolls}`)
+  jsScrolls.forEach(el => {
+    el.classList.add('scrolled')
+  })
+  // console.log(jsScroll)
+  // const aniEls = jsScroll.map('')
+  // console.log(aniEls)
+};
+const hideScrollElement = (element) => {
+  element.classList.remove("scrolled");
+};
