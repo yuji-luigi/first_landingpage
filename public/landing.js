@@ -71,13 +71,17 @@ const displayScrollElement = (element) => {
   const children = element.children
   const jsScrolls = Array.prototype.slice.call(children)
   console.log(`element: ${element}, children:${children}, jsscroll: ${jsScrolls}`)
-  jsScrolls.forEach(el => {
-    el.classList.add('scrolled')
-  })
-  // console.log(jsScroll)
-  // const aniEls = jsScroll.map('')
-  // console.log(aniEls)
+  
+  let interval = 500
+  jsScrolls.forEach(function(el, index) {
+    setTimeout(function () {
+      console.log(el)
+      el.classList.add('scrolled')    
+    }, index * interval)
+})
 };
+
+
 const hideScrollElement = (element) => {
   element.classList.remove("scrolled");
 };

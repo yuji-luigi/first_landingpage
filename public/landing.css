@@ -54,10 +54,8 @@ article {
 }
 
 section {
-  width: 88%;
+  width: 90%;
   margin:auto;
-  /* padding:0 6%; */
-  /* background:rgba(1, 17, 13, 0.7); */
   z-index: 1;
 }
 header {
@@ -122,9 +120,6 @@ header {
   z-index: 15;
 }
 
-.gallery {
-  background:rgba(90, 110, 119, 0.836)
-}
 
 .brand-title {
   font-size: 1.5rem;
@@ -172,7 +167,6 @@ header {
 }
 
 #sectionh{
-  /* position:fixed; */
   margin-bottom: 20px;
   background:rgba(1, 17, 13, 0.2);
   color: #fefefe;
@@ -231,7 +225,6 @@ header {
 }
 
 #section1 {
-  /* width: 89%; */
   padding-top: 20px;
   margin: auto;
   background:rgba(1, 17, 13, 0.6);
@@ -250,7 +243,7 @@ header {
   font-size: 2rem;
 }
 
-#section1 article img {
+#section1 article .main-myimage {
   margin: auto;
   width: 60%;
   order:2;
@@ -264,40 +257,36 @@ header {
   text-align: center;
 }
 
-
-#section1 .flex {
-  display: flex;
-  margin: auto;
-  padding: 10px;
-  width: 80%;
-  border-radius: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
-  grid-template-rows: repeat(auto-fit, minmax(100px, max-content));
-  justify-content: center;
-  grid-gap: 20px;
-}
-
-#section1 .flex div {
-  margin-bottom: 0;
-}
-
-#section1 .flex img {
-  margin:0;
-  margin-top: 5px;
+#section1 .tech {
   width: 100%;
-  border-radius: .5rem;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;}
+
+#section1 .tech {
+  margin: 10px;
+  background:rgba(90, 110, 119, 0.836)
+
+}
+#section1 .tech h2 {
+  margin: 10px;
 }
 
-#section1 .tech-icons .js-scroll {
-  display: none
+#section1 .tech-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-#section1 .tech-icons .js-scroll.scrolled {
-  animation: popup-icon 1000ms ease-in-out both;
-  display: unset;
-}
 
+#section1 .tech-icons img {
+  margin:5px;
+  max-width: 50px;
+  border-radius: .5rem;
+}
 
 
 #section2 .grid {
@@ -312,7 +301,6 @@ header {
 .card {
   width:100%;
   margin: auto;
-  /* margin-bottom: 50px; */
   padding: 50px;
   border: 2px solid #333;
   background: #222;
@@ -320,52 +308,38 @@ header {
   transition: transform 250ms;
 }
 
-#section2  .card.js-scroll{
- display: none;
-}
-
-#section2 .card.js-scroll.scrolled {
-  animation: spin-in 2s ease-in-out both;
-  display: block;
-}
-
-
-
 .card:hover {
   transform: scale(1.03) rotate(3deg)
 }
 
 
 #section3 {
-  background:rgba(34, 100, 84, 0.404)
+  background:rgba(34, 100, 84, 0.404);
+  overflow: hidden;
+  position:relative;
+  height:450px;
 }
 
 #section3 .section-title {
   margin-top: 20px;
 }
 
-#section3 .slide-container {
-  position: relative;
-  min-height: 400px;
-}
-
 #section3 .section-main-image {
   position: absolute;
-  width: 250px;
+  width: 350px;
   right:0;
-  animation: spin-in 1500ms ease-in-out both;
 }
 
 #section3 .content-title {
   position: absolute;
-  font-size: 2rem;
-  top: 70px;
+  font-size: 3rem;
+  top: 100px;
   left: 5%;
   z-index: 1;
   color: #333;
-  text-shadow: var(--text-shadow);
-  animation: slide-in-up 1500ms ease-in-out both;
+  text-shadow: 1px 1px 2px #fefefe;
 }
+
 
 
 
@@ -417,10 +391,8 @@ header {
 
 
 #section5 .section-bg1 {
-  /* background-image: url("image/codes.jpg");  */
   opacity: 0.3 ;
   z-index:2;
-  
 }
 
 #section5 .content-text{
@@ -439,6 +411,49 @@ header {
 
 .main-footer li a {
   color: #fefefe;
+}
+
+.js-scroll {
+  opacity: 0;
+}
+
+
+.js-scroll.scrolled {
+   opacity: 1;
+}
+
+.js-scroll.scrolled.roll-out {
+  animation: roll-out 500ms ease-in-out
+}
+.js-scroll.scrolled.roll-in {
+  animation: roll-in 500ms ease-in-out
+}
+.js-scroll.scrolled.slide-right {
+  animation: slide-right 500ms ease-in-out
+}
+.js-scroll.scrolled.pop-zoom {
+  animation: pop-zoom 500ms ease-in-out
+}
+.js-scroll.scrolled.pop-zoom-out {
+  animation: pop-zoom-out 1000ms ease-in-out
+}
+.js-scroll.scrolled.fade-in-delayed {
+  animation: fade-in-delayed 1500ms ease-in-out
+}
+.js-scroll.scrolled.fade-in {
+  animation: fade-in 1000ms ease-in-out
+}
+.js-scroll.scrolled.spin-in-left-muscle {
+  animation: spin-in-left-muscle 1000ms ease-in-out;
+}
+.js-scroll.scrolled.slide-in-up-muscle {
+  animation: slide-in-up-muscle 1500ms ease-in-out;
+}
+.js-scroll.scrolled.slide-in-up {
+  animation: slide-in-up 500ms ease-in-out
+}
+.js-scroll.scrolled.popup-icon {
+  animation: popup-icon 1000ms ease-in-out;
 }
 
 
@@ -463,8 +478,6 @@ header {
     height:0;
   }
 }
-
-
 
 @keyframes slide-right {
 0% {
@@ -501,20 +514,37 @@ header {
 }
 }
 
-
-
-@keyframes spin-in{
+@keyframes fade-in-delayed{
 0% {
-
-  transform: rotate(45deg) translate(450px, 300px );
+  opacity: 0;
+ }
+30% {
+  opacity:0
+}
+100% {
+ opacity: 1;
+}
 }
 
-/* 20% {
-} */
+@keyframes spin-in-left-muscle{
+0% { 
+  position:absolute;
+  right:0;
+  transform: translateY(500px) rotate(20deg) ;
+}
 
 100% {
- transform:  translate(0, 0);
- display:block;
+  position:absolute;
+  right:0;
+  transform:  translateY(0);
+}
+}
+@keyframes fade-in{
+0% {
+  opacity:0
+}
+100% {
+ opacity: 1;
 }
 }
 
@@ -534,17 +564,35 @@ header {
   opacity: 1
 }
 }
+@keyframes slide-in-up-muscle {
+0% {
+  transform: translateY(50px);
+  opacity: 0
+}
+
+55%{
+  transform: translateY(50px);
+  opacity: 0
+}
+
+90% {
+  transform: translateY(0);
+  opacity: 1
+}
+}
 
 @keyframes popup-icon{
-0% {
-  height: 0;
-  width:0;
-}
-100% {
-  height: 100%;
-  width:100%;
+  0% {
+    opacity: 0;
+    height: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    height:50px;
+    transform: translateY(0);
 
-}
+  }
 }
 
 @media (max-width: 700px) {
@@ -552,8 +600,6 @@ header {
     display: flex;
   }
   
-  
-  /* Reposition .navbar ul for menu tab */
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -591,6 +637,12 @@ header {
 }
 
   @media (min-width: 700px){
+    section {
+      width: 88%;
+      margin:auto;
+      z-index: 1;
+    }
+
     #sectionh .content-title{
       font-size: 3rem;
     }
@@ -611,7 +663,6 @@ header {
   #section1{
     width: 88%;
     padding-top: 20px;
-    height:90vh;
     background:rgba(1, 17, 13, 0.6);
   }
     
@@ -619,7 +670,11 @@ header {
     box-shadow: none;
     border: none;
   }
-
+  
+  #section1 .tech {
+    width: 600px;
+  }
+  
   
     
     #section1 .gallery {
@@ -636,9 +691,9 @@ header {
       width:100%;
       margin: auto;
       grid-template-columns:repeat(6, 1fr) ;
-      grid-template-rows:1fr minmax(150, 1fr) ;
+      grid-template-rows:1fr  minmax(150, 1fr) ;
       grid-template-areas:
-      "p-text p-text p-text p-img p-img p-img"
+      " . p-text p-text p-text  p-img  ."
       "  t-used t-used t-used  t-learn  t-learn t-learn "
      
      
@@ -667,6 +722,8 @@ header {
       align-items: center;
     }
 
+    
+
     #section1 .tech-used {
       grid-area: t-used;
       margin-right: 5px;
@@ -680,7 +737,6 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      /* justify-content: space-between; */
       width: 100%;
       padding-bottom: 5px;
       background:rgba(90, 110, 119, 0.836)
@@ -691,14 +747,10 @@ header {
      }
 
      #section1 .tech-icons {
-       padding:0;
-       
-       margin: auto;
+       padding:0;   
      }
      
-     /* #section2 {
-       background:rgba(34, 100, 84, 0.404);
-     } */
+     
     #section2 .grid {
       display: grid;
       grid-gap: 10px;
@@ -736,17 +788,17 @@ header {
     }
 
     #section3 .section-main-image {
-     width: 400px;
+     width: 550px;
      right: 10%;
+     top:0;
   
     }
 
     #section3 .content-title {
-      top: 100px;
+      top: 200px;
       left:5%;
       font-size: 4rem;
       z-index: 20;
-      animation: slide-in-up 500ms ease-in-out both;
     }
     
     #section4 .grid {
@@ -756,7 +808,7 @@ header {
     }
    #section5 .section-bg1, #section5 .section-bg2 {
      width: 70%;
-     right:18%;
+     right:15%;
      margin :auto;
    }
 
@@ -764,8 +816,47 @@ header {
      left: 15%;
    }
     
+   @keyframes spin-in-left-muscle{
+    0% { 
+      position:absolute;
+      top:0;
+      right:10%;
+      transform: translateY(600px) rotate(20deg) translate(0, 600px );
+    }
+    
+    100% {
+      position:absolute;
+      right:10%;
+      top:0;
+      transform:  translateY(0);
+      display:block;
+    }
+    }
+
+    @keyframes popup-icon{
+      0% {
+        height: 0;
+        width:0;
+        
+      }
+      100% {
+        height: 100%;
+        width:150px;
+      }
+      }
   }
   
+  @media(max-width:800px) {
+    #section1 .tech img{
+      max-width: 50px;
+    }
+  }
+  
+  @media(min-width:800px) {
+     #section1 .tech  img {
+       width: 100px;
+     }
+  }
 
   
   
