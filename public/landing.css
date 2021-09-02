@@ -405,12 +405,17 @@ header {
 }
 
 .main-footer {
-  padding: 20px;
+  padding: 10%;
   background:rgba(34, 100, 84, 0.404);
 }
 
-.main-footer li a {
-  color: #fefefe;
+.main-footer ul li{
+  display: inline-block;
+  margin: 10px;
+}
+
+.main-footer li img {
+  width: 80px;
 }
 
 .js-scroll {
@@ -529,13 +534,13 @@ header {
 @keyframes spin-in-left-muscle{
 0% { 
   position:absolute;
-  right:-20%;
+  right:-18%;
   transform: translateY(500px) rotate(20deg) ;
 }
 
 100% {
   position:absolute;
-  right:-20%;
+  right:-10%;
   transform:  translateY(0);
 }
 }
@@ -751,17 +756,25 @@ header {
      
      
     #section2 .grid {
-      display: grid;
+      /* display: grid;
       grid-gap: 10px;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-template-rows: repeat(auto-fit, 1fr);
+      margin: auto;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+      grid-template-rows: repeat(auto-fit, 1fr); */
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
     }
     .card {
       padding: 35px;
+      max-width: 400px;
+
     }
 
     .card img {
-      max-height: 300px;
+      max-width: 300px;
+      margin:auto;
     }
 
     .card-content p, .card-content h4{
