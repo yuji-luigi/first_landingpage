@@ -416,7 +416,10 @@ header {
 
 .main-footer li img {
   width: 80px;
+  border-radius: .5rem;
 }
+.main-footer li img:hover {
+background: rgba(104, 104, 104, 0.4);}
 
 .js-scroll {
   opacity: 0;
